@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-app.get('*', (req, res)=>{
+app.get('/api/*', (req, res)=>{
     return res.send('<h1>your server is running on port 22</h1>')
 })
 
